@@ -1,560 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 8 ]>
+<html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>
-        Bruno Fernandes - Personal Resume
-    </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="src/img/favicon.png" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" />
-    <link rel="stylesheet" href="src/app/css/uikit-custom.min.css" />
-    <link rel="stylesheet" href="src/app/css/app.css" />
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Bruno Fernandes - Resume</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.png">
+
 </head>
 
-<body class="yb-dark-skin uk-light" id="body-app">
-<!-- page loader -->
-<div id="pageloader" class="yb-pageloader-wrapper">
-    <div class="uk-position-center uk-text-center">
-        <div data-uk-spinner></div>
-    </div>
-</div>
-<!-- end page loader -->
-<!-- main header -->
-<header class="yb-main-header" id="main-header">
-    <!-- home section -->
-    <div class="yb-full-height" id="home">
-        <section class="yb-profile-desc">
-            <div class="yb-section-point-wrapper" data-uk-parallax="opacity: 1, 0;">
-                <div class="uk-container">
-                    <div class="yb-section-point">
-                        <sup>01</sup>
-                        <span>welcome</span>
-                    </div>
-                </div>
-            </div>
-            <div class="yb-graphics">
-                <div class="yb-graphic-1" data-uk-parallax="blur: 0,30;"></div>
-                <div class="yb-graphic-2" data-uk-parallax="blur: 0,30;"></div>
-            </div>
-            <div class="uk-container uk-text-center yb-profile-desc-wrap uk-position-relative">
-                <img src="src/img/x1.png" alt="" width="60" />
-                <h1 class="uk-text-bold yb-gradient-text"><span>Bruno</span> <span>Fernandes</span></h1>
-                <div class="uk-text-bold yb-myjob">I'm a/n <span id="typed" class="typed"> </span></div>
-            </div>
-        </section>
-    </div>
-    <!-- end home section -->
+<body>
 
-    <!-- main menu -->
-    <nav class="yb-main-menu" id="main-menu">
-        <div class="uk-container" data-uk-navbar>
-            <div class="uk-navbar-left">
-                <a class="yb-logo uk-navbar-item uk-logo" href="index.html"><span>Bruno Fernandes</span></a>
-            </div>
-            <div class="uk-navbar-right uk-hidden@m">
-                <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
-                    <span data-uk-navbar-toggle-icon class="yb-icon-menu"></span>
-                    <span data-uk-icon="close" class="yb-icon-close"></span>
-                </a>
-            </div>
-            <div class="yb-menu-toggle-wrapper" id="menucollapse">
-                <div class="uk-navbar-center">
-                    <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 79 ">
-                        <li>
-                            <a class="yb-inner-link" href="#home"> Home </a>
-                        </li>
-                        <li>
-                            <a class="yb-inner-link" href="#about"> About</a>
-                        </li>
-                        <li>
-                            <a class="yb-inner-link" href="#resume"> Resume </a>
-                        </li>
-                        <li>
-                            <a class="yb-inner-link" href="#contact"> Contact </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav yb-social-icons">
-                        <li>
-                            <a href="https://www.facebook.com/bdpf5/">
-                                <span class="uk-icon" data-uk-icon="icon: facebook"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/o.brunofernandes/">
-                                <span class="uk-icon" data-uk-icon="icon: instagram"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/bdpf5">
-                                <span class="uk-icon" data-uk-icon="icon: twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<!-- Header
+================================================== -->
+<header id="home">
+
+    <nav id="nav-wrap">
+
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+        <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#resume">Resume</a></li>
+        </ul> <!-- end #nav -->
+
+    </nav> <!-- end #nav-wrap -->
+
+    <div class="row banner">
+        <div class="banner-text">
+            <h1 class="responsive-headline">I'm Bruno Fernandes.</h1>
+            <h3>I'm an <span>automation engineer</span>, <span>human-organizer</span> and <span>curious guy</span>
+                finding
+                my place in the constant change of the actual world. Let's <a class="smoothscroll"
+                                                                              href="#about">start
+                    scrolling</a>
+                and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr/>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/bdpf5/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/bdpf5"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/brunodanielfernandes/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/o.brunofernandes/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
         </div>
-    </nav>
-    <!-- end main menu -->
-</header>
-<!-- end main header -->
-<!-- main section -->
-<main class="yb-main-content">
-    <!-- about section -->
-    <section id="about" class="yb-section">
-        <div class="yb-my-profile">
-            <div class="uk-container">
-                <div class="uk-grid-collapse uk-child-width-expand@m" data-uk-grid>
-                    <div>
-                        <div class="yb-my-profile-img uk-background-cover uk-background-norepeat uk-background-top-center" data-src="src/img/profile.jpg" data-uk-img data-uk-lightbox></div>
-                    </div>
-                    <div>
-                        <div class="yb-my-profile-desc">
-                            <div class="yb-section-point-wrapper">
-                                <div class="yb-section-point right">
-                                    <sup>02</sup>
-                                    <span>About</span>
-                                </div>
-                            </div>
-                            <div class="yb-my-profile-desc-top">
-                                <h2 class="yb-section-title">Hello There!</h2>
-                                <p>
-                                </p>
-                            </div>
-                            <div class="yb-my-profile-desc-bottom yb-bg-soft">
-                                <ul class="yb-my-profile-desc-info uk-list">
-                                    <li><span>Birthdate</span> : 28/09/1993</li>
-                                    <li><span>Phone</span> : + 351 914 582 683</li>
-                                    <li><span>Email</span> : bruno.daniel.fernandes@outlook.com</li>
-                                    <li><span>Address</span> : Lisbon, Portugal</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+
+    <p class="scrolldown">
+        <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+    </p>
+
+</header> <!-- Header End -->
+
+
+<!-- About Section
+================================================== -->
+<section id="about">
+
+    <div class="row">
+
+        <div class="three columns">
+
+            <img class="profile-pic" src="images/profile.jpg" alt=""/>
+
         </div>
-        <div class="yb-border-top yb-border-bottom">
-            <div class="uk-container">
-                <div data-uk-grid class="yb-box-services uk-child-width-1-4@l uk-child-width-1-2 uk-text-center uk-grid-divider">
-                    <div>
-                        <div class="yb-box-service">
-                            <span class="uk-icon" data-uk-icon="icon: lifesaver; ratio: 1.5"></span>
-                            <h5>Quality Assurance</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="yb-box-service">
-                            <span class="uk-icon" data-uk-icon="icon: code; ratio: 1.5"></span>
-                            <h5>DevOps</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="yb-box-service">
-                            <span class="uk-icon" data-uk-icon="icon: bolt; ratio: 1.5"></span>
-                            <h5>Automation</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="yb-box-service">
-                            <span class="uk-icon" data-uk-icon="icon: move; ratio: 1.5"></span>
-                            <h5>Agile</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end about section -->
-    <!-- resume section -->
-    <section class="yb-section" id="resume">
-        <div class="yb-section-point-wrapper">
-            <div class="uk-container">
-                <div class="yb-section-point">
-                    <sup>03</sup>
-                    <span>Resume</span>
-                </div>
-            </div>
-        </div>
-        <div class="uk-container">
-            <div data-uk-grid class="uk-grid-divider">
-                <div class="uk-width-1-4@s uk-visible@s uk-margin-large-bottom yb-section-padding-top" id="resume-nav-wrapper">
-                    <div data-uk-sticky="bottom: #resume-nav-wrapper; offset: 100; media: 650">
-                        <ul class="yb-nav-left uk-tab-left uk-tab" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 120">
-                            <li class="uk-active">
-                                <a href="#education" class="yb-inner-link" data-offset="120">
-                                    <span data-uk-icon="minus"></span>
-                                    Education
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#experience" class="yb-inner-link" data-offset="120">
-                                    <span data-uk-icon="minus"></span>
-                                    Experience
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#skills" class="yb-inner-link" data-offset="120">
-                                    <span data-uk-icon="minus"></span>
-                                    Skills
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#certificates" class="yb-inner-link" data-offset="120">
-                                    <span data-uk-icon="minus"></span>
-                                    Certificates
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="uk-width-expand@s yb-section-padding-top">
-                    <div>
-                        <h2 class="yb-section-title uk-heading-line" id="education">
-                            <span>Education</span>
-                        </h2>
-                        <div class="yb-resume-list">
-                            <ul class="uk-list uk-list-large uk-list-divider">
-                                <li>
-                                    <div class="yb-resume-item">
-                                        <div class="yb-resume-item-date">
-                                            <div class="yb-resume-item-date-icon"><span data-uk-icon="calendar"></span></div>
-                                            <div class="yb-resume-item-date-text"><span>2011 - 2016</span></div>
-                                        </div>
-                                        <h4 class="yb-section-title">MSc in Biomedical Engineering . Medical Informatics</h4>
-                                        <strong>University of Minho</strong>
-                                        <div class="uk-text-small">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="yb-section-title uk-heading-line" id="experience">
-                            <span>Experience</span>
-                        </h2>
-                        <div class="yb-resume-list">
-                            <ul class="uk-list uk-list-large uk-list-divider">
-                                <li>
-                                    <div class="yb-resume-item">
-                                        <div class="yb-resume-item-date">
-                                            <div class="yb-resume-item-date-icon"><span data-uk-icon="calendar"></span></div>
-                                            <div class="yb-resume-item-date-text"><span>Aug 2018 - Present</span></div>
-                                        </div>
-                                        <h4 class="yb-section-title">Automation Engineer</h4>
-                                        <strong>Celfocus</strong>
-                                        <div class="uk-text-small">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="yb-resume-item">
-                                        <div class="yb-resume-item-date">
-                                            <div class="yb-resume-item-date-icon"><span data-uk-icon="calendar"></span></div>
-                                            <div class="yb-resume-item-date-text"><span>Aug 2017 - Aug 2018</span></div>
-                                        </div>
-                                        <h4 class="yb-section-title">Quality Assurance Engineer</h4>
-                                        <strong>WeDo</strong>
-                                        <div class="uk-text-small">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="yb-resume-item">
-                                        <div class="yb-resume-item-date">
-                                            <div class="yb-resume-item-date-icon"><span data-uk-icon="calendar"></span></div>
-                                            <div class="yb-resume-item-date-text"><span>Nov 2016 - Aug 2017</span></div>
-                                        </div>
-                                        <h4 class="yb-section-title">Software Quality Assurance Manager</h4>
-                                        <strong>PeekMed</strong>
-                                        <div class="uk-text-small">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="yb-section-title uk-heading-line" id="skills">
-                            <span>Skills</span>
-                        </h2>
-                        <div class="yb-margin-top-1 yb-margin-bottom-2">
-                            <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-text-center" data-uk-grid>
-                                <div class="yb-bg-soft">
-                                    <div class="yb-box-circle">
-                                        <div class="circle-progress" data-value="0.9">
-                                            <strong>70<i>%</i></strong>
-                                        </div>
-                                        <h5 class="yb-box-circle-title">Java</h5>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="yb-box-circle">
-                                        <div class="circle-progress" data-value="0.9">
-                                            <strong>80<i>%</i></strong>
-                                        </div>
-                                        <h5 class="yb-box-circle-title">HTML</h5>
-                                    </div>
-                                </div>
-                                <div class="yb-bg-soft">
-                                    <div class="yb-box-circle">
-                                        <div class="circle-progress" data-value="1">
-                                            <strong>65<i>%</i></strong>
-                                        </div>
-                                        <h5 class="yb-box-circle-title">SQL</h5>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="yb-box-circle">
-                                        <div class="circle-progress" data-value="0.8">
-                                            <strong>80<i>%</i></strong>
-                                        </div>
-                                        <h5 class="yb-box-circle-title">Selenium</h5>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="yb-box-circle">
-                                        <div class="circle-progress" data-value="0.6">
-                                            <strong>80<i>%</i></strong>
-                                        </div>
-                                        <h5 class="yb-box-circle-title">Cucumber</h5>
-                                    </div>
-                                </div>
-                                <div class="yb-bg-soft">
-                                    <div class="yb-box-circle">
-                                        <div class="circle-progress" data-value="0.7">
-                                            <strong>85<i>%</i></strong>
-                                        </div>
-                                        <h5 class="yb-box-circle-title">Jenkins</h5>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="yb-box-circle">
-                                        <div class="circle-progress" data-value="0.8">
-                                            <strong>80<i>%</i></strong>
-                                        </div>
-                                        <h5 class="yb-box-circle-title">Git</h5>
-                                    </div>
-                                </div>
-                                <div class="yb-bg-soft">
-                                    <div class="yb-box-circle">
-                                        <div class="circle-progress" data-value="0.9">
-                                            <strong>90<i>%</i></strong>
-                                        </div>
-                                        <h5 class="yb-box-circle-title">Mysql</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-uk-grid class="uk-child-width-1-2">
-                                <div>
-                                    <h4 class="yb-section-title">Soft Skills</h4>
-                                    <ul class="uk-list uk-list-large uk-list-divider">
-                                        <li>
-                                            <div class="yb-resume-skill-item">
-                                                <h5>Team Working <small class="uk-float-right uk-text-bold uk-visible@s">100%</small></h5>
-                                                <progress class="uk-progress" value="100" max="100"></progress>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="yb-resume-skill-item">
-                                                <h5>Problem Solving <small class="uk-float-right uk-text-bold uk-visible@s">80%</small></h5>
-                                                <progress class="uk-progress" value="80" max="100"></progress>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="yb-resume-skill-item">
-                                                <h5>Time Management <small class="uk-float-right uk-text-bold uk-visible@s">80%</small></h5>
-                                                <progress class="uk-progress" value="80" max="100"></progress>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="yb-resume-skill-item">
-                                                <h5>Communication <small class="uk-float-right uk-text-bold uk-visible@s">95%</small></h5>
-                                                <progress class="uk-progress" value="95" max="100"></progress>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="yb-section-title">Languages</h4>
-                                    <ul class="uk-list uk-list-large uk-list-divider">
-                                        <li>
-                                            <div class="yb-resume-skill-item">
-                                                <h5>Portuguese <small class="uk-float-right uk-text-bold uk-visible@s">100%</small></h5>
-                                                <progress class="uk-progress" value="100" max="100"></progress>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="yb-resume-skill-item">
-                                                <h5>English <small class="uk-float-right uk-text-bold uk-visible@s">90%</small></h5>
-                                                <progress class="uk-progress" value="90" max="100"></progress>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="yb-resume-skill-item">
-                                                <h5>Swedish <small class="uk-float-right uk-text-bold uk-visible@s">30%</small></h5>
-                                                <progress class="uk-progress" value="30" max="100"></progress>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="yb-section-title uk-heading-line" id="certificates">
-                            <span>Certificates</span>
-                        </h2>
-                        <div class="yb-resume-list">
-                            <ul class="uk-list uk-list-large uk-list-divider">
-                                <li>
-                                    <div class="yb-resume-item">
-                                        <div class="yb-resume-item-date">
-                                            <div class="yb-resume-item-date-icon"><span data-uk-icon="calendar"></span></div>
-                                            <div class="yb-resume-item-date-text"><span>2018</span></div>
-                                        </div>
-                                        <h4 class="yb-section-title">Foundation Level</h4>
-                                        <strong>ISTQB</strong>
-                                        <div class="uk-text-small">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end resume section -->
-    <!-- contact section -->
-    <section class="yb-section yb-border-top" id="contact">
-        <div class="yb-section-point-wrapper">
-            <div class="uk-container">
-                <div class="yb-section-point">
-                    <sup>04</sup>
-                    <span>Contact</span>
-                </div>
-            </div>
-        </div>
-        <div class="uk-container">
-            <div data-uk-grid class="uk-grid-divider">
-                <div class="yb-section-padding yb-contact-left uk-width-3-4@m">
-                    <div>
-                        <h2 class="yb-section-title uk-heading-line">
-                            <span>Get in touch</span>
-                        </h2>
-                        <p class="uk-text-bold">Feel free to contact me</p>
-                        <div id="contact-form-alert"></div>
-                        <form id="contact-form" class="uk-form-stacked">
-                            <div class="uk-grid uk-grid-small uk-child-width-1-2@s">
-                                <div>
-                                    <div class="uk-margin">
-                                        <label for="f_email" class="uk-form-label">Email*</label>
-                                        <div class="uk-form-controls uk-inline uk-width-1-1">
-                                            <span class="uk-form-icon" data-uk-icon="icon: user"></span>
-                                            <input class="yb-input uk-input uk-border-rounded" type="email" name="f_email" id="f_email" placeholder=" Your email here . . ." />
-                                        </div>
-                                        <small class="uk-text-danger err-msg" id="f_email_error"></small>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="uk-margin">
-                                        <label for="f_phone" class="uk-form-label">Phone*</label>
-                                        <div class="uk-form-controls uk-inline uk-width-1-1">
-                                            <span class="uk-form-icon" data-uk-icon="icon: phone"></span>
-                                            <input class="yb-input uk-input uk-border-rounded" type="text" name="f_phone" id="f_phone" placeholder=" Your phone here . . ." />
-                                        </div>
-                                        <small class="uk-text-danger err-msg" id="f_phone_error"></small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-margin">
-                                <label class="uk-form-label">Subject*</label>
-                                <div class="uk-form-controls uk-grid-small uk-child-width-auto uk-grid">
-                                    <label><input class="uk-radio" type="radio" name="f_subject" value="General" checked /> General</label>
-                                </div>
-                            </div>
-                            <div class="uk-margin">
-                                <label for="f_message" class="uk-form-label">Message*</label>
-                                <div class="uk-form-controls">
-                                    <textarea class="yb-input uk-textarea uk-border-rounded" rows="7" name="f_message" id="f_message" placeholder="Your message here . . ."></textarea>
-                                </div>
-                                <small class="uk-text-danger err-msg" id="f_message_error"></small>
-                            </div>
-                            <div class="uk-margin-top">
-                                <button class="uk-button uk-button-primary uk-button-large yb-btn" type="submit" id="btn-contact-form" data-textreset="Send Now">
-                                    <span class="uk-margin-small-right btn-text-wrap">Send Now</span>
-                                    <span data-uk-icon="arrow-right" class="uk-icon"> </span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="uk-width-1-4@m yb-section-padding yb-contact-right">
-                    <p class="uk-margin-medium-bottom uk-visible@m">
-                        <img src="src/img/empty.png" data-src="src/img/profile2.jpg" width="500" height="500" data-uk-img alt="" class="uk-border-circle" />
+
+        <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I define myself as a progressive thinker with a wide range of interests.
+                With a broad sense of responsibility and organization, I am able to maintain order in the projects in
+                which I am involved, letting commitment and dedication define the way I work.
+                My high sense of creativity and observation provide a comprehensive overview over the various steps of
+                the working progress and, to maintain this, I try to innovate while being efficient, working hard to
+                achieve my goals.
+                Simultaneously, I am a very friendly and understanding guy, which makes me a great teammate.
+                My life motto is to enjoy life to the fullest.
+            </p>
+
+            <div class="row">
+
+                <div class="columns contact-details">
+
+                    <h2>Contact Details</h2>
+                    <p class="address">
+                        <span>Bruno Fernandes</span><br>
+                        <span>Lisbon, Portugal</span><br>
+                        <span>(+351) 914 582 683</span><br>
+                        <span>bruno.daniel.fernandes@outlook.com</span>
                     </p>
-                    <ul class="uk-list uk-list-divider uk-text-small yb-contact-mini">
-                        <li class="uk-flex uk-flex-middle">
-                            <span data-uk-icon="mail" class="uk-flex-none uk-text-primary"></span>
-                            <span>bruno.daniel.fernandes@outlook.com</span>
-                        </li>
-                        <li class="uk-flex uk-flex-middle">
-                            <span data-uk-icon="phone" class="uk-flex-none uk-text-primary"></span>
-                            <span> +351 914 582 683</span>
-                        </li>
-                        <li class="uk-flex uk-flex-middle">
-                            <span data-uk-icon="location" class="uk-flex-none uk-text-primary"></span>
-                            <span>Lisbon, Portugal</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end contact section -->
-</main>
-<!-- end main section -->
-<!-- main footer -->
-<footer class="yb-main-footer-wrapper">
-    <div class="waveHorizontals">
-        <div id="waveHorizontal1" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave1.svg"></div>
-        <div id="waveHorizontal2" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave2.svg"></div>
-        <div id="waveHorizontal3" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave3.svg"></div>
-    </div>
-    <a href="#body-app" class="uk-visible@s yb-totop yb-inner-link" data-uk-totop></a>
-    <div class="yb-main-footer">
-        <div class="uk-container">
-            <div data-uk-grid class="uk-child-width-1-2@s">
-                <div class="uk-margin-remove uk-text-left@s">
-                    &copy; 2021 Bruno Fernandes.
-                </div>
-                <div class="uk-margin-remove uk-text-right@s">
-                    <div class="yb-footer-social">
-                        <a href="https://www.facebook.com/bdpf5/">Facebook</a>
-                        <a href="https://www.instagram.com/o.brunofernandes/">Instagram</a>
-                        <a href="https://twitter.com/bdpf5">Twitter</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- end main footer -->
 
-<!-- js -->
-<script src="src/app/js/plugins.min.js"></script>
-<script src="src/app/js/app.js"></script>
+                </div>
+
+                <div class="columns download">
+                    <p>
+                        <a href="CV_Bruno.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                    </p>
+                </div>
+
+            </div> <!-- end row -->
+
+        </div> <!-- end .main-col -->
+
+    </div>
+
+</section> <!-- About Section End-->
+
+
+<!-- Resume Section
+================================================== -->
+<section id="resume">
+
+    <!-- Education
+    ----------------------------------------------- -->
+    <div class="row education">
+
+        <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3>University of Minho</h3>
+                    <p class="info">MSc in Biomedical Engineering . Medical Informatics <span>&bull;</span> <em
+                            class="date">2011 - 2016</em></p>
+
+                    <p>
+                        The master's degree in Medical Informatics encourages the implementation of
+                        information technologies in the planning, development, adoption and application
+                        of methodologies in a perspective of increasing the quality of healthcare services'
+                        provision and management using database technologies, intelligent systems and
+                        communication and networks.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+        </div> <!-- main-col end -->
+
+    </div> <!-- End Education -->
+
+
+    <!-- Work
+    ----------------------------------------------- -->
+    <div class="row work">
+
+        <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3>Celfocus</h3>
+                    <p class="info">Automation Engineer<span>&bull;</span> <em class="date">August 2018 - Present</em>
+                    </p>
+
+                    <p>
+                        As Automation Engineer I am part of the automated testing framework team and I
+                        am involved in the automation workflow, utilizing technology to improve,
+                        streamline and automate manufacturing processes.
+                        This includes planning, implementation, and monitoring of such technologies by
+                        providing systems integration according to customer requests.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3>WeDo</h3>
+                    <p class="info">Quality Assurance Engineer<span>&bull;</span> <em class="date">August 2017 - August
+                        2018</em></p>
+
+                    <p>
+                        As Quality Assurance Engineer I was allocated at different clients' projects and I was involved
+                        in the development and execution of exploratory and automated tests to ensure product quality.
+                        My main responsibilities included the comprehensive design, development and execution of
+                        automation scripts, debugging and code maintenance before product launches to ensure software
+                        runs smoothly and meets client needs, while being cost-effective.
+                        At the same time, I was also responsible for reviewing system requirements and tracking quality
+                        assurance metrics to provide timely and meaningful feedback on the testing activities.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3>PeekMed</h3>
+                    <p class="info">Software Quality Assurance Manager<span>&bull;</span> <em class="date">November 2016
+                        - August 2017</em></p>
+
+                    <p>
+                        As Software QA Manager, I was responsible for testing PeekMed’s software and mobile app for
+                        potential problems or bugs before their release to the public, making sure they were working
+                        properly. Software testing involves going through the typical uses of the programs, as well as
+                        potential misuses to see if problems or bugs arise. Through this process, I used JIRA and
+                        Confluence for bug reporting and documentation. Additionally, I was also involved in the
+                        implementation of the Quality Management System (QMS) that documents processes, procedures, and
+                        responsibilities for achieving quality policies and objectives in order to coordinate and direct
+                        PeekMed’s activities to meet customer and regulatory requirements and improve its effectiveness
+                        and efficiency on a continuous basis.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+        </div> <!-- main-col end -->
+
+    </div> <!-- End Work -->
+
+
+    <!-- Skills
+    ----------------------------------------------- -->
+    <div class="row skill">
+
+        <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <div class="bars">
+
+                <ul class="skills">
+                    <li><span class="bar-expand jenkins"></span><em>Jenkins</em></li>
+                    <li><span class="bar-expand selenium"></span><em>Selenium</em></li>
+                    <li><span class="bar-expand cucumber"></span><em>Cucumber</em></li>
+                    <li><span class="bar-expand cicd"></span><em>CI/CD</em></li>
+                </ul>
+
+            </div><!-- end skill-bars -->
+
+        </div> <!-- main-col end -->
+
+    </div> <!-- End skills -->
+
+</section> <!-- Resume Section End-->
+
+<footer>
+
+    <div class="row">
+
+        <div class="twelve columns">
+
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/bdpf5/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/bdpf5"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/brunodanielfernandes/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/o.brunofernandes/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+
+        <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+    </div>
+
+</footer> <!-- Footer End-->
+
+<!-- Java Script
+================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/init.js"></script>
+
 </body>
+
 </html>
